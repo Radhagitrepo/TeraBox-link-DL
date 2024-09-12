@@ -12,7 +12,7 @@ const path = require('path');
 
 const token = process.env.BOT_TOKEN; // Replace with your bot's token
 const bot = new TelegramBot(token, { polling: true });
-const updatesChannel = '@Opleech_WD';
+const updatesChannel = '@tg_bots_radha';
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -56,10 +56,10 @@ const checkSubscription = async (userId) => {
 };
 
 const sendStartMessage = (chatId) => {
-    bot.sendMessage(chatId, `👋 *Welcome to TeraBox Video Player Bot!* 🎉\n\n*Paste your TeraBox link and watch your video instantly—no TeraBox app needed!* 🚀\n\nPlease subscribe to our [Updates Channel](https://t.me/Opleech_WD) to start using this bot.`, {
+    bot.sendMessage(chatId, `👋 *Welcome to TeraBox Video Player Bot!* 🎉\n\n*Paste your TeraBox link and watch your video instantly—no TeraBox app needed!* 🚀\n\nPlease subscribe to our [Updates Channel](https://t.me/tg_bots_radha) to start using this bot.`, {
         parse_mode: 'Markdown',
         reply_markup: {
-            inline_keyboard: [[{ text: '〇 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 〇', url: 'https://t.me/Opleech_WD' }]]
+            inline_keyboard: [[{ text: '〇 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 〇', url: 'https://t.me/tg_bots_radha' }]]
         }
     });
 };
